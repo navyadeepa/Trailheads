@@ -1,0 +1,5 @@
+<apex:page >
+    Firstname: {! $User.firstname}
+    LastName: {! $User.lastname}
+    Today Date: {! Today()}
+</apex:page>

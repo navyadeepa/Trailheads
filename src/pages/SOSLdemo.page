@@ -1,0 +1,34 @@
+<apex:page controller="SOSLclass">
+    <apex:form >
+        <apex:pageblock title="SOSL Demo">
+        
+        <apex:commandButton value="Submit" action="{!SOSLdataretrieve}"/>
+            <apex:pageBlockSection title="Lead Info" columns="1">
+                
+                <apex:pageBlockTable value="{!leadInfo}" var="a">
+                    <apex:column value="{!a.Id}"/>
+                    <apex:column value="{!a.Name}"/>
+                    <apex:column value="{!a.Company}"/> 
+                    <apex:column value="{!a.Phone}"/>               
+                </apex:pageBlockTable>
+             </apex:pageBlockSection>
+              
+              <apex:pageBlockSection title="Account Info" columns="1">
+                <apex:pageBlockTable value="{!accountInfo}" var="b">
+                    <apex:column value="{!b.Id}"/>
+                    <apex:column value="{!b.Name}"/>
+                    
+                </apex:pageBlockTable>
+             </apex:pageBlockSection>
+             
+             <apex:pageBlockSection title="Employee Info" columns="1">
+                 <apex:pageBlockTable value="{!empInfo}" var="c">
+                     <apex:column value="{!c.Name}"/>
+                     <apex:column value="{!c.Emp_No__c}"/>
+                     
+                 </apex:pageBlockTable>
+            </apex:pageBlockSection>
+             
+        </apex:pageblock>
+        </apex:form>
+ </apex:page>

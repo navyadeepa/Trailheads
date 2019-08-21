@@ -1,0 +1,13 @@
+<apex:page controller="ApexClassProg1">
+ <apex:form >
+     <apex:pageBlock title="Account Info">
+     <apex:commandButton value="Submit" action="{!DemoStoringValues}"/>
+         <apex:pageBlockSection title="Personal Info">
+             <apex:inputText label="Account Name" value="{!Name}" />
+             <apex:inputText label="Phone Number" value="{!Phone}"/>
+             <apex:inputText label="Fax No." value="{!Fax}"/>
+             <apex:inputtext label="Account No." value="{!AccountNumber}" />
+         </apex:pageBlockSection>
+     </apex:pageBlock>
+ </apex:form>
+</apex:page>

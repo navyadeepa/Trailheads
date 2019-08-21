@@ -1,0 +1,32 @@
+<apex:page sidebar="false" showHeader="true" standardController="X100Projects__c">
+<apex:form >
+
+<apex:pageBlock title="Account Information">
+
+<apex:pageBlockButtons location="bottom">
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+
+</apex:pageBlockButtons>
+
+
+<apex:pageBlockSection title="Personal Information">
+<!-- apex:inputField value="{!Lead.Owner}"/ -->
+<apex:inputField value="{!X100Projects__c.Name}"/>
+<apex:inputField value="{!X100Projects__c.Employee_Name__c}"/>
+<apex:inputField value="{!X100Projects__c.Time_Span_No_of_weeks__c}"/>
+
+</apex:pageBlockSection>
+
+<apex:pageBlockSection title="Comapany Information">
+<!-- apex:inputField value="{!Lead.Owner}"/ -->
+<apex:inputField value="{!X100Projects__c.Name}"/>
+<apex:inputField value="{!X100Projects__c.Employee_Name__c}"/>
+<apex:inputField value="{!X100Projects__c.Time_Span_No_of_weeks__c}"/>
+
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

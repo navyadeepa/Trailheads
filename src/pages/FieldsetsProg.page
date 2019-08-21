@@ -1,0 +1,7 @@
+<apex:page standardController="Account">
+<apex:form >
+  <apex:repeat value="{!$Objecttype.Account.Fieldsets.AccountsProjPersonalInfo}" var="i">
+     <apex:inputfield value="{!Account[i]}" />
+  </apex:repeat>
+  </apex:form>
+</apex:page>

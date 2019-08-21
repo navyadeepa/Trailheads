@@ -1,0 +1,4 @@
+<apex:page >
+    <apex:image value="{!$Resource.OfceImg}"/>
+
+</apex:page>

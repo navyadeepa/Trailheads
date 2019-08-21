@@ -1,0 +1,50 @@
+<apex:page sidebar="false" showHeader="true" standardController="Account">
+ <apex:form >
+ <apex:pageBlock title="Account Info">
+
+ <apex:pageBlockButtons location="bottom">
+ <apex:commandButton title="Button" value="Save Account" action="{!save}"/>
+ <apex:commandButton value="Cancel" action="{!cancel}"/>
+ </apex:pageBlockButtons>
+ 
+ <apex:pageMessage summary="This is account info" severity="error" strength="2" >
+ </apex:pageMessage>
+ 
+ <apex:pageBlockSection title="Select Option">
+ <apex:selectList label="Select Country" size="1">
+ <apex:selectOption itemLabel="USA" itemValue="US"> </apex:selectOption>
+ <apex:selectOption itemlabel="IND" itemValue="IN"> </apex:selectOption>
+ </apex:selectList>
+ </apex:pageBlockSection>
+ 
+ <apex:pageblockSection title="InputText">
+ <apex:selectCheckboxes label="Select Country" > 
+ <apex:selectOption itemlabel="USA" itemvalue="US"> </apex:selectOption>
+ <apex:selectOption itemlabel="IND" itemvalue="IN"> </apex:selectOption>
+ </apex:selectCheckboxes>
+ 
+ <apex:selectRadio label="Select Country">
+ <apex:selectOption itemLabel="USA" itemValue="US"> </apex:selectOption>
+ <apex:selectOption itemlabel="IND" itemValue="IN"> </apex:selectOption>
+
+ </apex:selectRadio>
+ 
+ </apex:pageblockSection>
+ 
+ <apex:pageBlockSection title="Command Link">
+ <apex:commandLink value="Save" action="{!save}"/>
+ 
+ </apex:pageBlockSection>
+ 
+ <apex:pageBlockSection title="Encrypted format/Input Secret">
+ <!-- apex:inputHidden  value="Navya"/ -->
+ <apex:inputSecret label="Password"/>
+ <apex:inputCheckbox label="Status"/>
+ </apex:pageBlockSection>
+ 
+ 
+  
+ </apex:pageBlock>
+ 
+ </apex:form>
+</apex:page>

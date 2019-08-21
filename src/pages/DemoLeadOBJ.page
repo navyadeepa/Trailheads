@@ -1,0 +1,24 @@
+<apex:page sidebar="false" showHeader="true" standardController="Lead">
+<apex:form >
+
+<apex:pageBlock title="Account Information">
+
+<apex:pageBlockButtons >
+<apex:commandButton value="Save Lead" action="{!save}"/>
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+
+</apex:pageBlockButtons>
+
+
+<apex:pageBlockSection title="Personal Information">
+<!-- apex:inputField value="{!Lead.Owner}"/ -->
+<apex:inputField value="{!Lead.LastName}"/>
+<apex:inputField value="{!Lead.Company}"/>
+<apex:inputField value="{!Lead.Salutation}"/>
+
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+</apex:form>
+</apex:page>

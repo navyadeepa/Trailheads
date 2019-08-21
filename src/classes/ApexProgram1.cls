@@ -1,0 +1,2 @@
+public class ApexProgram1 {
+}

@@ -1,0 +1,24 @@
+<apex:page showHeader="true" sidebar="false" standardController="Account">
+    <apex:form >
+        <apex:pageBlock title="Account Information">
+        
+        <apex:PageblockButtons location="bottom" >
+       
+        <apex:commandButton value="Save Account" action="{!save}"/>
+        <apex:commandButton value="Cancel" ACTION="{!cancel}" />
+        
+        </apex:pageblockButtons>
+                     
+            <apex:pageBlockSection title="Personal Information" columns="3">
+                <apex:inputField value="{!Account.Name}"/>
+                <apex:inputField value="{!Account.AccountNumber}"/>
+                <apex:inputField value="{!Account.NumberofLocations__c}"/>
+                <apex:inputField value="{!Account.Phone}"/>
+                <apex:inputField value="{!Account.Rating}"/>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+   
+</apex:form>
+
+</apex:page>

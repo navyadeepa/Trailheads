@@ -1,0 +1,4 @@
+<apex:page sidebar="false" standardController="Lead">
+  <apex:detail subject="{!Lead.ID}" relatedList="true" relatedListHover="false" />
+  
+</apex:page>

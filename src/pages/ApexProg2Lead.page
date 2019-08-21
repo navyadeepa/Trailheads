@@ -1,0 +1,22 @@
+<apex:page controller="ApexClassProgLead2">
+ <apex:form >
+ <apex:commandButton value="Submit" action="{!InsertValuesLead}"/>
+ <!-- apex:commandButton title="Cancel" action="{!Cancel}"/ -->
+  <apex:pageBlock title="Lead Info">
+     <apex:pageBlockSection title="Contact Info">
+         <apex:inputText label="Last Name" value="{!Last_Name}" />
+         <apex:inputText label="Company" value="{!Company}"/>
+         <apex:inputText label="Phone" value="{!Phone}"/>
+         <apex:inputText label="Title" value="{!Title}" />
+      
+      <apex:selectList label="Lead Status" value="{!Status}" size="1">
+         <apex:selectOption itemLabel="Open" itemValue="Open"> </apex:selectOption>
+         <apex:selectOption itemLabel="Closed" itemValue="Closed"> </apex:selectOption>
+         <apex:selectOption itemLabel="Working" itemValue="Working"> </apex:selectOption>
+         <apex:selectOption itemLabel="Not Closed" itemValue="Not Closed"> </apex:selectOption>
+      </apex:selectList>
+      
+     </apex:pageBlockSection>
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>
