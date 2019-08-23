@@ -12,5 +12,7 @@ trigger DuplicateName on Employee__c (before insert, before update) {
     if(e.name != null)
         e.adderror('Duplicate Record');
         
+        system.debug('Hello world');
+        
         // saving changes
 }
